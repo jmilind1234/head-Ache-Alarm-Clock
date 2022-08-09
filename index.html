@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <Title>Headache Alarm clock</Title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <audio id="myAudio">
+        <source src="horror-chase-music-loop-67634.mp3" type="audio/mp3">
+    </audio>
+    <H1>GET BACK TO WORK!!</H1>
+
+    <div id="holder">
+        <input type="text" placeholder="Enter Time in 24 HRS. format (HH : MM)" >
+    </div>
+    <div class="button-holder">
+        <button onClick="setAlarm()">SET ALARM</button>
+    </div>
+    <div class="button-holder">
+        <button onClick="stopAlarm()">STOP ALARM</button>
+    </div>
+    <div id="content-container">
+        <div id="time-container">
+            <p id="Current-time"></p>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
